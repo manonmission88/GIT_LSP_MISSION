@@ -27,6 +27,10 @@ public class IntegerRange implements Range {
             return this.lowerBound <= otherRange.upperBound && this.upperBound >= otherRange.lowerBound;
         }
    
+    @override 
+    public boolean equal(int value) {
+    	return this.lowerBound == this.upperBound;
+    }
 
     //return size 
     public int size() {
